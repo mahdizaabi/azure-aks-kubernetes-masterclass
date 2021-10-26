@@ -4,6 +4,7 @@
 - We can update deployments using two options
   - Set Image
   - Edit Deployment
+  -  kubectl get deployment my-first-deployment -o yaml | grep -A 4 -B 1 " container"
 
 ## Step-01: Updating Application version V1 to V2 using "Set Image" Option
 ### Update Deployment
