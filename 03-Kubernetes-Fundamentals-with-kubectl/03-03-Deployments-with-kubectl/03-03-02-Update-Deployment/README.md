@@ -17,6 +17,7 @@ kubectl get deployment my-first-deployment -o yaml
 # Update Deployment - SHOULD WORK NOW
 kubectl set image deployment/<Deployment-Name> <Container-Name>=<Container-Image> --record=true
 kubectl set image deployment/my-first-deployment kubenginx=stacksimplify/kubenginx:2.0.0 --record=true
+  get container name: kubectl get deployment my-first-deployment -o yaml | grep -A 4 -B 1 " container"
 ```
 ### Verify Rollout Status (Deployment Status)
 - **Observation:** By default, rollout happens in a rolling update model, so no downtime.
