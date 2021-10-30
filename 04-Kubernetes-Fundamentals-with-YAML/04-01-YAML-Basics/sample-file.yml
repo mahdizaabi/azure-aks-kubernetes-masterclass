@@ -1,12 +1,12 @@
 # Simple Key value Pairs
-person: # Dictionary
+person: # Dictionary person:{name: kaylan, ..., ...}
   name: kalyan
   age: 23
-  city: Hyderabd
-  hobbies: # List
+  city:  Hyderabd
+  hobbies: # List hobbies : [cooking, cycling]
     - cooking
     - cycling
-  friends: # Multiple lists
+  friends: # Multiple lists frinds: [[name: friend1, age: 23], [name:frined2, age: 24]]
     - name: friend1
       age: 23
     - name: friend2
@@ -27,7 +27,7 @@ spec:
         - containerPort: 80
           protocol: "TCP"
         - containerPort: 81
-          protocol: "TCP"  
+          protocol: "TCP"
 
 
                      
